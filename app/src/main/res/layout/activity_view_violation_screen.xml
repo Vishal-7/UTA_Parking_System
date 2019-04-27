@@ -54,7 +54,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:gravity="center"
-                    android:text="St Time"
+                    android:text="Start Time"
                     android:textSize="18sp"
                     android:textStyle="bold" />
             </TableRow>
@@ -64,28 +64,28 @@
                 android:layout_height="match_parent">
 
                 <EditText
-                    android:id="@+id/editText40"
+                    android:id="@+id/etSNO1"
                     android:layout_width="76dp"
                     android:layout_height="wrap_content"
                     android:ems="10"
                     android:inputType="textPersonName" />
 
                 <EditText
-                    android:id="@+id/editText41"
+                    android:id="@+id/etPID1"
                     android:layout_width="195dp"
                     android:layout_height="wrap_content"
                     android:ems="10"
                     android:inputType="textPersonName" />
 
                 <EditText
-                    android:id="@+id/editText42"
+                    android:id="@+id/etDATE1"
                     android:layout_width="134dp"
                     android:layout_height="wrap_content"
                     android:ems="10"
                     android:inputType="textPersonName" />
 
                 <EditText
-                    android:id="@+id/editText10"
+                    android:id="@+id/etSTIME1"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:ems="10"
@@ -97,28 +97,28 @@
                 android:layout_height="match_parent">
 
                 <EditText
-                    android:id="@+id/editText43"
+                    android:id="@+id/etSNO2"
                     android:layout_width="76dp"
                     android:layout_height="wrap_content"
                     android:ems="10"
                     android:inputType="textPersonName" />
 
                 <EditText
-                    android:id="@+id/editText44"
+                    android:id="@+id/etPID2"
                     android:layout_width="195dp"
                     android:layout_height="wrap_content"
                     android:ems="10"
                     android:inputType="textPersonName" />
 
                 <EditText
-                    android:id="@+id/editText45"
+                    android:id="@+id/etDATE2"
                     android:layout_width="134dp"
                     android:layout_height="wrap_content"
                     android:ems="10"
                     android:inputType="textPersonName" />
 
                 <EditText
-                    android:id="@+id/editText142"
+                    android:id="@+id/etSTIME2"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:ems="10"
@@ -130,28 +130,28 @@
                 android:layout_height="match_parent">
 
                 <EditText
-                    android:id="@+id/editText46"
+                    android:id="@+id/etSNO3"
                     android:layout_width="76dp"
                     android:layout_height="wrap_content"
                     android:ems="10"
                     android:inputType="textPersonName" />
 
                 <EditText
-                    android:id="@+id/editText48"
+                    android:id="@+id/etPID3"
                     android:layout_width="195dp"
                     android:layout_height="wrap_content"
                     android:ems="10"
                     android:inputType="textPersonName" />
 
                 <EditText
-                    android:id="@+id/editText49"
+                    android:id="@+id/etDATE3"
                     android:layout_width="134dp"
                     android:layout_height="wrap_content"
                     android:ems="10"
                     android:inputType="textPersonName" />
 
                 <EditText
-                    android:id="@+id/editText143"
+                    android:id="@+id/etSTIME3"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:ems="10"
@@ -163,28 +163,28 @@
                 android:layout_height="match_parent">
 
                 <EditText
-                    android:id="@+id/editText50"
+                    android:id="@+id/etSNO4"
                     android:layout_width="76dp"
                     android:layout_height="wrap_content"
                     android:ems="10"
                     android:inputType="textPersonName" />
 
                 <EditText
-                    android:id="@+id/editText54"
+                    android:id="@+id/etPID4"
                     android:layout_width="195dp"
                     android:layout_height="wrap_content"
                     android:ems="10"
                     android:inputType="textPersonName" />
 
                 <EditText
-                    android:id="@+id/editText56"
+                    android:id="@+id/etDATE4"
                     android:layout_width="134dp"
                     android:layout_height="wrap_content"
                     android:ems="10"
                     android:inputType="textPersonName" />
 
                 <EditText
-                    android:id="@+id/editText144"
+                    android:id="@+id/etSTIME4"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:ems="10"

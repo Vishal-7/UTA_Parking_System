@@ -3,16 +3,22 @@ package com.example.myapplication1;
 import android.app.ActionBar;
 import android.app.AlertDialog;
 import android.content.DialogInterface;
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.Menu;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
+import android.widget.EditText;
 import android.widget.Spinner;
 import android.widget.Toast;
 
 public class admin_edit_user_profile extends AppCompatActivity {
+
+    public EditText LastName,FirstName,UTAID,PhoneNo,EmailID,LicenseNo,NoShows,Violations;
+    public Spinner UserType;
 
     public static Button btn1;
     @Override
@@ -23,14 +29,14 @@ public class admin_edit_user_profile extends AppCompatActivity {
         ActionBar actionBar = getActionBar();
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
-        Spinner mySpinner1 = (Spinner) findViewById(R.id.UTspinner1);
+        UserType = (Spinner) findViewById(R.id.spinUserType3);
 
 
         ArrayAdapter<String> myAdapter1 = new ArrayAdapter<String>(getApplicationContext(),android.R.layout.simple_list_item_1,getResources().getStringArray(R.array.UserTypes));
 
         myAdapter1.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
 
-        mySpinner1.setAdapter(myAdapter1);
+        UserType.setAdapter(myAdapter1);
 
     }
 
@@ -65,4 +71,42 @@ public class admin_edit_user_profile extends AppCompatActivity {
         getMenuInflater().inflate(R.menu.main, menu);
         return super.onCreateOptionsMenu(menu);
     }
+
+    public boolean onOptionsItemSelected(MenuItem item){
+        switch (item.getItemId()) {
+
+            case R.id.action_logout:
+                startActivity(new Intent(admin_edit_user_profile.this,MainActivity.class));
+                Toast.makeText(getApplicationContext(),"You have successfully Logged out!",Toast.LENGTH_LONG).show();
+        }
+        return super.onOptionsItemSelected(item);
+    }
+
+    public void UISetup17() {
+
+        LastName = (EditText) findViewById(R.id.etLastName3);
+        FirstName = (EditText) findViewById(R.id.etFirstName3);
+        UTAID = (EditText) findViewById(R.id.etUTAID3);
+        PhoneNo = (EditText) findViewById(R.id.etPhoneNo3);
+        EmailID = (EditText) findViewById(R.id.etEmailID3);
+        LicenseNo = (EditText) findViewById(R.id.etLicenseNo3);
+        NoShows = (EditText) findViewById(R.id.etNoShow3);
+        Violations = (EditText) findViewById(R.id.etViolations3);
+
+    }
+
+    public void insertData14() {
+
+        String LastName8 = LastName.getText().toString();
+        String FirstName8 = FirstName.getText().toString();
+        String UTAID8 = UTAID.getText().toString();
+        String PhoneNo8 = PhoneNo.getText().toString();
+        String EmailID8 = EmailID.getText().toString();
+        String LicenseNo8 = LicenseNo.getText().toString();
+        String NoShows8 = NoShows.getText().toString();
+        String Violations8 = Violations.getText().toString();
+        String USerType = UserType.getSelectedItem().toString();
+
+    }
+
 }

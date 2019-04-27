@@ -11,7 +11,7 @@
         android:layout_height="wrap_content">
 
         <EditText
-            android:id="@+id/editText108"
+            android:id="@+id/etViolations"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="172dp"
@@ -43,14 +43,14 @@
             android:text="Violations"
             android:textSize="18sp"
             app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toStartOf="@+id/editText108"
+            app:layout_constraintEnd_toStartOf="@+id/etViolations"
             app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_bias="0.0" />
 
         <EditText
-            android:id="@+id/editText107"
+            android:id="@+id/etNOShows"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="172dp"
@@ -82,14 +82,14 @@
             android:text="No Shows"
             android:textSize="18sp"
             app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toStartOf="@+id/editText107"
+            app:layout_constraintEnd_toStartOf="@+id/etNOShows"
             app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_bias="0.0" />
 
         <EditText
-            android:id="@+id/editText74"
+            android:id="@+id/etLicenseNO"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="172dp"
@@ -121,7 +121,7 @@
             android:text="License No"
             android:textSize="18sp"
             app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toStartOf="@+id/editText74"
+            app:layout_constraintEnd_toStartOf="@+id/etLicenseNO"
             app:layout_constraintHorizontal_bias="0.222"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
@@ -140,14 +140,14 @@
             android:text="Email"
             android:textSize="18sp"
             app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toStartOf="@+id/editText63"
+            app:layout_constraintEnd_toStartOf="@+id/etEid"
             app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_bias="0.0" />
 
         <EditText
-            android:id="@+id/editText63"
+            android:id="@+id/etEid"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="172dp"
@@ -178,14 +178,14 @@
             android:text="Phone"
             android:textSize="18sp"
             app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toStartOf="@+id/editText62"
+            app:layout_constraintEnd_toStartOf="@+id/etPhoneNO"
             app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_bias="0.0" />
 
         <EditText
-            android:id="@+id/editText62"
+            android:id="@+id/etPhoneNO"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="172dp"
@@ -217,14 +217,14 @@
             android:text="UTA ID"
             android:textSize="18sp"
             app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toStartOf="@+id/editText60"
+            app:layout_constraintEnd_toStartOf="@+id/etUTAID"
             app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_bias="0.0" />
 
         <EditText
-            android:id="@+id/editText60"
+            android:id="@+id/etUTAID"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="172dp"
@@ -256,14 +256,14 @@
             android:text="First Name"
             android:textSize="18sp"
             app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toStartOf="@+id/editText59"
+            app:layout_constraintEnd_toStartOf="@+id/etFname"
             app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_bias="0.0" />
 
         <EditText
-            android:id="@+id/editText59"
+            android:id="@+id/etFname"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="172dp"
@@ -295,14 +295,14 @@
             android:text="Last Name"
             android:textSize="18sp"
             app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toStartOf="@+id/editText4"
+            app:layout_constraintEnd_toStartOf="@+id/etLastName3"
             app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_bias="0.0" />
 
         <EditText
-            android:id="@+id/editText57"
+            android:id="@+id/etLName"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="172dp"
@@ -334,14 +334,14 @@
             android:text="Username"
             android:textSize="18sp"
             app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toStartOf="@+id/editText2"
+            app:layout_constraintEnd_toStartOf="@+id/etUserName"
             app:layout_constraintHorizontal_bias="0.25"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_bias="0.0" />
 
         <EditText
-            android:id="@+id/editText2"
+            android:id="@+id/etUserName"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="174dp"
@@ -426,21 +426,21 @@
                 android:layout_height="match_parent">
 
                 <EditText
-                    android:id="@+id/editText109"
+                    android:id="@+id/etDATE41"
                     android:layout_width="111dp"
                     android:layout_height="wrap_content"
                     android:ems="10"
                     android:inputType="textPersonName" />
 
                 <EditText
-                    android:id="@+id/editText131"
+                    android:id="@+id/etPID41"
                     android:layout_width="186dp"
                     android:layout_height="wrap_content"
                     android:ems="10"
                     android:inputType="textPersonName" />
 
                 <CheckBox
-                    android:id="@+id/checkBox13"
+                    android:id="@+id/chBox41"
                     android:layout_width="28dp"
                     android:layout_height="wrap_content"
                     android:gravity="center" />
@@ -451,21 +451,21 @@
                 android:layout_height="match_parent">
 
                 <EditText
-                    android:id="@+id/editText11"
+                    android:id="@+id/etDATE42"
                     android:layout_width="101dp"
                     android:layout_height="wrap_content"
                     android:ems="10"
                     android:inputType="textPersonName" />
 
                 <EditText
-                    android:id="@+id/editText37"
+                    android:id="@+id/etPID42"
                     android:layout_width="219dp"
                     android:layout_height="wrap_content"
                     android:ems="10"
                     android:inputType="textPersonName" />
 
                 <CheckBox
-                    android:id="@+id/checkBox14"
+                    android:id="@+id/chBox42"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content" />
             </TableRow>
@@ -475,21 +475,21 @@
                 android:layout_height="match_parent">
 
                 <EditText
-                    android:id="@+id/editText47"
+                    android:id="@+id/etDATE43"
                     android:layout_width="108dp"
                     android:layout_height="wrap_content"
                     android:ems="10"
                     android:inputType="textPersonName" />
 
                 <EditText
-                    android:id="@+id/editText132"
+                    android:id="@+id/etPID43"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:ems="10"
                     android:inputType="textPersonName" />
 
                 <CheckBox
-                    android:id="@+id/checkBox15"
+                    android:id="@+id/chBox43"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content" />
             </TableRow>

@@ -3,12 +3,15 @@ package com.example.myapplication1;
 import android.app.ActionBar;
 import android.app.AlertDialog;
 import android.content.DialogInterface;
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.Menu;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
+import android.widget.EditText;
 import android.widget.Spinner;
 import android.widget.Toast;
 
@@ -16,6 +19,9 @@ public class spot_details_search_screen extends AppCompatActivity {
 
     public static Button btn1;
     public static Button btn2;
+    public Spinner ParkType,AreaName,Floor;
+    public EditText SpotNo;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -24,9 +30,9 @@ public class spot_details_search_screen extends AppCompatActivity {
         ActionBar actionBar = getActionBar();
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
-        Spinner mySpinner1 = (Spinner) findViewById(R.id.PTs1);
-        Spinner mySpinner2 = (Spinner) findViewById(R.id.ANs2);
-        Spinner mySpinner3 = (Spinner) findViewById(R.id.Fls3);
+        Spinner mySpinner1 = (Spinner) findViewById(R.id.spinParkType);
+        Spinner mySpinner2 = (Spinner) findViewById(R.id.spinAreaName);
+        Spinner mySpinner3 = (Spinner) findViewById(R.id.spinFloor);
 
         ArrayAdapter<String> myAdapter = new ArrayAdapter<String>(getApplicationContext(),android.R.layout.simple_list_item_1,getResources().getStringArray(R.array.ParkingTypes));
         ArrayAdapter<String> myAdapter2 = new ArrayAdapter<String>(getApplicationContext(),android.R.layout.simple_list_item_1,getResources().getStringArray(R.array.ParkingAreaNames));
@@ -99,5 +105,33 @@ public class spot_details_search_screen extends AppCompatActivity {
     public boolean onCreateOptionsMenu (Menu menu){
         getMenuInflater().inflate(R.menu.main, menu);
         return super.onCreateOptionsMenu(menu);
+    }
+
+    public boolean onOptionsItemSelected(MenuItem item){
+        switch (item.getItemId()) {
+
+            case R.id.action_logout:
+                startActivity(new Intent(spot_details_search_screen.this,MainActivity.class));
+                Toast.makeText(getApplicationContext(),"You have successfully Logged out!",Toast.LENGTH_LONG).show();
+
+        }
+        return super.onOptionsItemSelected(item);
+    }
+
+    public void UISetupviews1() {
+
+        SpotNo = (EditText) findViewById(R.id.etSpotNo);
+        ParkType = (Spinner) findViewById(R.id.spinParkType);
+        AreaName = (Spinner) findViewById(R.id.spinAreaName);
+        Floor = (Spinner) findViewById(R.id.spinFloor);
+
+    }
+
+    public void insertdata4() {
+
+        String SpotNo1 = SpotNo.getText().toString();
+        String ParkType1 = ParkType.getSelectedItem().toString();
+        String AreaName1 = AreaName.getSelectedItem().toString();
+        String Floor1 = Floor.getSelectedItem().toString();
     }
 }

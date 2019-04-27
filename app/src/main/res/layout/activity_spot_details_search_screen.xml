@@ -23,14 +23,14 @@
             android:text="Parking type"
             android:textSize="18sp"
             app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toStartOf="@+id/PTs1"
+            app:layout_constraintEnd_toStartOf="@+id/spinParkType"
             app:layout_constraintHorizontal_bias="0.062"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_bias="0.0" />
 
         <Spinner
-            android:id="@+id/PTs1"
+            android:id="@+id/spinParkType"
             android:layout_width="226dp"
             android:layout_height="24dp"
             android:layout_marginStart="170dp"
@@ -57,13 +57,13 @@
             android:text="Area Name"
             android:textSize="18sp"
             app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toStartOf="@+id/ANs2"
+            app:layout_constraintEnd_toStartOf="@+id/spinAreaName"
             app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
         <Spinner
-            android:id="@+id/ANs2"
+            android:id="@+id/spinAreaName"
             android:layout_width="226dp"
             android:layout_height="24dp"
             android:layout_marginStart="170dp"
@@ -90,14 +90,14 @@
             android:text="Floor"
             android:textSize="18sp"
             app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toStartOf="@+id/Fls3"
+            app:layout_constraintEnd_toStartOf="@+id/spinFloor"
             app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_bias="0.0" />
 
         <Spinner
-            android:id="@+id/Fls3"
+            android:id="@+id/spinFloor"
             android:layout_width="226dp"
             android:layout_height="24dp"
             android:layout_marginStart="173dp"
@@ -124,14 +124,14 @@
             android:text="Spot Number"
             android:textSize="18sp"
             app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toStartOf="@+id/editText51"
+            app:layout_constraintEnd_toStartOf="@+id/etSpotNo"
             app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_bias="1.0" />
 
         <EditText
-            android:id="@+id/editText51"
+            android:id="@+id/etSpotNo"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:background="@drawable/my_border"

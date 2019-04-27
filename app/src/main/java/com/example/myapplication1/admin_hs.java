@@ -8,6 +8,7 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
+import android.widget.Toast;
 
 public class admin_hs extends AppCompatActivity {
 
@@ -33,11 +34,23 @@ public class admin_hs extends AppCompatActivity {
                 startActivity(new Intent(admin_hs.this, admin_search_user.class));
             }
         });
+
     }
 
     public boolean onCreateOptionsMenu (Menu menu){
         getMenuInflater().inflate(R.menu.main, menu);
         return super.onCreateOptionsMenu(menu);
+    }
+
+    public boolean onOptionsItemSelected(MenuItem item){
+        switch (item.getItemId()) {
+
+            case R.id.action_logout:
+                startActivity(new Intent(admin_hs.this,MainActivity.class));
+                Toast.makeText(getApplicationContext(),"You have successfully Logged out!",Toast.LENGTH_LONG).show();
+
+        }
+        return super.onOptionsItemSelected(item);
     }
 
 }

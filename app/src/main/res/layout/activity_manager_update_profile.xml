@@ -19,14 +19,14 @@
         android:text="Last Name"
         android:textSize="18sp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/lastNameEditText3"
+        app:layout_constraintEnd_toStartOf="@+id/etFirstNameU"
         app:layout_constraintHorizontal_bias="0.603"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.078" />
 
     <EditText
-        android:id="@+id/lastNameEditText3"
+        android:id="@+id/etFirstNameU"
         android:layout_width="212dp"
         android:layout_height="wrap_content"
         android:background="@drawable/my_border"
@@ -47,7 +47,7 @@
         app:layout_constraintVertical_bias="0.054" />
 
     <EditText
-        android:id="@+id/firstNameEditText3"
+        android:id="@+id/etFirstName"
         android:layout_width="212dp"
         android:layout_height="wrap_content"
         android:background="@drawable/my_border"
@@ -82,14 +82,14 @@
         android:text="First Name"
         android:textSize="18sp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/firstNameEditText3"
+        app:layout_constraintEnd_toStartOf="@+id/etFirstName"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.241" />
 
     <EditText
-        android:id="@+id/utaIdEditText3"
+        android:id="@+id/etUtaID"
         android:layout_width="212dp"
         android:layout_height="wrap_content"
         android:background="@drawable/my_border"
@@ -124,14 +124,14 @@
         android:text="UTA ID"
         android:textSize="18sp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/utaIdEditText3"
+        app:layout_constraintEnd_toStartOf="@+id/etUtaID"
         app:layout_constraintHorizontal_bias="0.44"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.412" />
 
     <EditText
-        android:id="@+id/phoneNoEditText3"
+        android:id="@+id/etPhoneNum"
         android:layout_width="212dp"
         android:layout_height="wrap_content"
         android:background="@drawable/my_border"
@@ -166,14 +166,14 @@
         android:text="Phone"
         android:textSize="18sp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/phoneNoEditText3"
+        app:layout_constraintEnd_toStartOf="@+id/etPhoneNum"
         app:layout_constraintHorizontal_bias="0.415"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.559" />
 
     <EditText
-        android:id="@+id/emailEditText3"
+        android:id="@+id/etEid"
         android:layout_width="212dp"
         android:layout_height="wrap_content"
         android:background="@drawable/my_border"
@@ -208,7 +208,7 @@
         android:text="E-Mail"
         android:textSize="18sp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/emailEditText3"
+        app:layout_constraintEnd_toStartOf="@+id/etEid"
         app:layout_constraintHorizontal_bias="0.32"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"

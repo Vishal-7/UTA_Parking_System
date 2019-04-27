@@ -9,7 +9,6 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".user_prof_screen_1"></activity>
         <activity
             android:name=".admin_edit_user_profile"
             android:label="Edit Profile"
@@ -21,7 +20,6 @@
         <activity
             android:name=".view_past_reservations_screen"
             android:configChanges="orientation"
-            android:exported="true"
             android:label="Past Reservations"
             android:parentActivityName=".user_hs">
             <meta-data
@@ -105,6 +103,7 @@
         <activity
             android:name=".forgot_password"
             android:label="Forgot Password"
+            android:exported="true"
             android:parentActivityName=".MainActivity">
             <meta-data
                 android:name="android:support.PARENT_ACTIVITY"
@@ -136,7 +135,6 @@
         </activity>
         <activity
             android:name=".user_registration_screen"
-            android:exported="true"
             android:label="User Registration"
             android:parentActivityName=".MainActivity">
             <meta-data
@@ -178,6 +176,7 @@
         <activity
             android:name=".user_prof_screen"
             android:label="Profile screen"
+
             android:parentActivityName=".user_hs">
             <meta-data
                 android:name="android:support.PARENT_ACTIVITY"

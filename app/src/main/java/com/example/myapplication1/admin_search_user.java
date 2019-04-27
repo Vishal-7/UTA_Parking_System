@@ -6,11 +6,15 @@ import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.Menu;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
+import android.widget.EditText;
 import android.widget.Toast;
 
 public class admin_search_user extends AppCompatActivity {
+
+    public EditText UserName,LastName,FirstName,UTAID,PhoneNo,EmailID,LicenseNo,NoShows,Violations,UserType;
 
     public static Button btn2;
     @Override
@@ -59,5 +63,31 @@ public class admin_search_user extends AppCompatActivity {
     public boolean onCreateOptionsMenu (Menu menu){
         getMenuInflater().inflate(R.menu.main, menu);
         return super.onCreateOptionsMenu(menu);
+    }
+
+    public boolean onOptionsItemSelected(MenuItem item){
+        switch (item.getItemId()) {
+
+            case R.id.action_logout:
+                startActivity(new Intent(admin_search_user.this,MainActivity.class));
+                Toast.makeText(getApplicationContext(),"You have successfully Logged out!",Toast.LENGTH_LONG).show();
+
+        }
+        return super.onOptionsItemSelected(item);
+    }
+
+    public void UISetup16() {
+
+        UserName = (EditText) findViewById(R.id.etUserName0);
+        LastName = (EditText) findViewById(R.id.etLastName3);
+        FirstName = (EditText) findViewById(R.id.etFirstName3);
+        UTAID = (EditText) findViewById(R.id.etUTAID3);
+        PhoneNo = (EditText) findViewById(R.id.etPhoneNo3);
+        EmailID = (EditText) findViewById(R.id.etEmailID3);
+        LicenseNo = (EditText) findViewById(R.id.etLicenseNo3);
+        NoShows = (EditText) findViewById(R.id.etNoShow3);
+        Violations = (EditText) findViewById(R.id.etViolations3);
+        UserType = (EditText) findViewById(R.id.etUserType0);
+
     }
 }

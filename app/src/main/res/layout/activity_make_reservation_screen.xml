@@ -19,14 +19,14 @@
         android:text="Date"
         android:textSize="18sp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/DateeditText"
+        app:layout_constraintEnd_toStartOf="@+id/etDate"
         app:layout_constraintHorizontal_bias="0.388"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.0" />
 
     <EditText
-        android:id="@+id/DateeditText"
+        android:id="@+id/etDate"
         android:layout_width="143dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="229dp"
@@ -59,14 +59,14 @@
         android:text="Starting Time"
         android:textSize="18sp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/StartTmeeditText2"
+        app:layout_constraintEnd_toStartOf="@+id/etStartTime"
         app:layout_constraintHorizontal_bias="0.418"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="1.0" />
 
     <EditText
-        android:id="@+id/StartTmeeditText2"
+        android:id="@+id/etStartTime"
         android:layout_width="143dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="232dp"
@@ -82,7 +82,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/DateeditText"
+        app:layout_constraintTop_toBottomOf="@+id/etDate"
         app:layout_constraintVertical_bias="0.026" />
 
     <TextView
@@ -98,14 +98,14 @@
         android:text="Duration (hrs)"
         android:textSize="18sp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/DurationeditText3"
+        app:layout_constraintEnd_toStartOf="@+id/etDuration"
         app:layout_constraintHorizontal_bias="0.041"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.0" />
 
     <EditText
-        android:id="@+id/DurationeditText3"
+        android:id="@+id/etDuration"
         android:layout_width="143dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="166dp"
@@ -134,7 +134,7 @@
         android:text="Parking Type"
         android:textSize="18sp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/parkTypespinner1"
+        app:layout_constraintEnd_toStartOf="@+id/spinParkType"
         app:layout_constraintHorizontal_bias="0.441"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
@@ -153,14 +153,14 @@
         android:text="Area Name"
         android:textSize="18sp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/ParkNamespinner2"
+        app:layout_constraintEnd_toStartOf="@+id/SpinAreaNAme"
         app:layout_constraintHorizontal_bias="0.207"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.183" />
 
     <Spinner
-        android:id="@+id/ParkNamespinner2"
+        android:id="@+id/SpinAreaNAme"
         android:layout_width="142dp"
         android:layout_height="38dp"
         android:layout_marginStart="230dp"
@@ -188,14 +188,14 @@
         android:text="Floor"
         android:textSize="18sp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/Floorspinner3"
+        app:layout_constraintEnd_toStartOf="@+id/spinFloor"
         app:layout_constraintHorizontal_bias="0.126"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.0" />
 
     <Spinner
-        android:id="@+id/parkTypespinner1"
+        android:id="@+id/spinParkType"
         android:layout_width="143dp"
         android:layout_height="37dp"
         android:layout_marginStart="232dp"
@@ -212,7 +212,7 @@
         app:layout_constraintVertical_bias="0.42" />
 
     <Spinner
-        android:id="@+id/Floorspinner3"
+        android:id="@+id/spinFloor"
         android:layout_width="142dp"
         android:layout_height="37dp"
         android:layout_marginStart="230dp"
@@ -268,7 +268,7 @@
         app:layout_constraintVertical_bias="1.0" />
 
     <CheckBox
-        android:id="@+id/checkBox2"
+        android:id="@+id/cboxCart1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="20dp"
@@ -286,7 +286,7 @@
         app:layout_constraintVertical_bias="0.0" />
 
     <CheckBox
-        android:id="@+id/checkBox3"
+        android:id="@+id/cboxHistory1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="123dp"
@@ -295,7 +295,7 @@
         android:layout_marginEnd="139dp"
         android:layout_marginRight="139dp"
         android:layout_marginBottom="115dp"
-        android:text="Camera"
+        android:text="History"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.648"
@@ -304,7 +304,7 @@
         app:layout_constraintVertical_bias="0.0" />
 
     <CheckBox
-        android:id="@+id/checkBox4"
+        android:id="@+id/cboxCamera1"
         android:layout_width="wrap_content"
         android:layout_height="29dp"
         android:layout_marginStart="243dp"
@@ -313,7 +313,7 @@
         android:layout_marginEnd="24dp"
         android:layout_marginRight="24dp"
         android:layout_marginBottom="115dp"
-        android:text="History"
+        android:text="Camera"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.513"

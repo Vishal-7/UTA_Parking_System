@@ -93,7 +93,7 @@ public class user_registration_screen extends AppCompatActivity {
         Rpassword = (EditText)findViewById(R.id.etRPassword);
         UTAid = (EditText)findViewById(R.id.etUTAid);
         Phno = (EditText)findViewById(R.id.etPHno);
-        Email = (EditText)findViewById(R.id.etEmail);
+        Email = (EditText)findViewById(R.id.etEid);
         Carinfo = (EditText)findViewById(R.id.etCarinfo);
         Licenseno = (EditText)findViewById(R.id.etLicenseno);
         Parktype = (Spinner) findViewById(R.id.PermitTSpinner1);
@@ -128,7 +128,7 @@ public class user_registration_screen extends AppCompatActivity {
 
 
 
-        if (Fname1.isEmpty() || Lname1.isEmpty() || Username1.isEmpty() || Password1.isEmpty() || RPassword1.isEmpty() || UTAid1.isEmpty() || Phno1.isEmpty() || Email1.isEmpty() || Carinfo1.isEmpty() || Licenseno1.isEmpty()){
+        if (Fname1.isEmpty() || Lname1.isEmpty() || Username1.isEmpty() || Password1.isEmpty() || RPassword1.isEmpty() || UTAid1.isEmpty() || Phno1.isEmpty() || Email1.isEmpty()){
             Toast.makeText(this,"Please enter all the details",Toast.LENGTH_LONG).show();
         }
         else if(!Email1.matches("^[A-Za-z0-9+_.-]+@(.+)$")){
@@ -175,13 +175,18 @@ public class user_registration_screen extends AppCompatActivity {
         //SQLiteDatabase Db1 = SQLiteDatabase.openOrCreateDatabase("Re",null,null);
         Db=openOrCreateDatabase("Reg", Context.MODE_PRIVATE, null);
 
-        Db.execSQL("CREATE TABLE reg(fname varchar(20),lname varchar(20),username varchar(20),password varchar(20)," +
+       /* Db.execSQL("CREATE TABLE reg(fname varchar(20),lname varchar(20),username varchar(20),password varchar(20)," +
                 "UTAID varchar(20),phone varchar(20),email varchar(30),usertype varchar(10)," +
                 "parkingtype varchar(30),carinfo varchar(20),licenseno varchar(20) );");
-
-
-        Db.execSQL("INSERT INTO reg VALUES('"+Fname1+"','"+Lname1+"','"+Username1+"','"+Password1+"','"+UTAid1+"','"+Phno1+"','"+Email1+"','"+Usertype1+"','"+Parktype1+"','"+Carinfo1+"','"+Licenseno1+"'); ");
-
+*/
+        if(Usertype1.equals("User")) {
+            Db.execSQL("INSERT INTO reg VALUES('" + Fname1 + "','" + Lname1 + "','" + Username1 + "','" + Password1 + "','" + UTAid1 + "','" + Phno1 + "','" + Email1 + "','" + Usertype1 + "','" + Parktype1 + "','" + Carinfo1 + "','" + Licenseno1 + "'); ");
+        }
+        else
+        {
+            Db.execSQL("INSERT INTO reg VALUES('" + Fname1 + "','" + Lname1 + "','" + Username1 + "','" + Password1 + "','" + UTAid1 + "','" + Phno1 + "','" + Email1 + "','" + Usertype1 + "','" + Parktype1 + "','" + Carinfo1 + "','" + Licenseno1 + "'); ");
+        }
+        System.out.println("sdfkhdsjkvbsckvbdxkv");
         Toast.makeText(this,"You have successfully registered!!",Toast.LENGTH_LONG).show();
         setContentView(R.layout.activity_user_registration_screen);
     }

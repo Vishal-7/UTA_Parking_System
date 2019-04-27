@@ -2,15 +2,37 @@ package com.example.myapplication1;
 
 import android.app.AlertDialog;
 import android.content.DialogInterface;
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.Menu;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
+import android.widget.CheckBox;
+import android.widget.EditText;
 import android.widget.Toast;
 
 public class manager_user_search extends AppCompatActivity {
 
+    public EditText UserName;
+    public EditText LastName;
+    public EditText FirstName;
+    public EditText UTAID;
+    public EditText PhoneNo;
+    public EditText EmailID;
+    public EditText LicenseNo;
+    public EditText NoShows;
+    public EditText Violations;
+    public EditText Date1;
+    public EditText Date2;
+    public EditText Date3;
+    public EditText PID1;
+    public EditText PID2;
+    public EditText PID3;
+    public CheckBox ChBox1;
+    public CheckBox ChBox2;
+    public CheckBox ChBox3;
     public static Button btn1;
     public static Button btn2;
     @Override
@@ -77,5 +99,48 @@ public class manager_user_search extends AppCompatActivity {
     public boolean onCreateOptionsMenu (Menu menu){
         getMenuInflater().inflate(R.menu.main, menu);
         return super.onCreateOptionsMenu(menu);
+    }
+
+    public boolean onOptionsItemSelected(MenuItem item){
+        switch (item.getItemId()) {
+
+            case R.id.action_logout:
+                startActivity(new Intent(manager_user_search.this,MainActivity.class));
+                Toast.makeText(getApplicationContext(),"You have successfully Logged out!",Toast.LENGTH_LONG).show();
+
+        }
+        return super.onOptionsItemSelected(item);
+    }
+
+    public void UIsetup5() {
+
+        UserName = (EditText) findViewById(R.id.etUserName);
+        LastName = (EditText) findViewById(R.id.etFirstNameU);
+        FirstName = (EditText) findViewById(R.id.etFirstName);
+        UTAID = (EditText) findViewById(R.id.etUTAID);
+        PhoneNo = (EditText) findViewById(R.id.etPhoneNO);
+        EmailID = (EditText) findViewById(R.id.etEid);
+        LicenseNo = (EditText) findViewById(R.id.etLicenseNO);
+        NoShows = (EditText) findViewById(R.id.etNOShows);
+        Violations = (EditText) findViewById(R.id.etViolations);
+
+        Date1 = (EditText) findViewById(R.id.etDATE41);
+        Date2 = (EditText) findViewById(R.id.etDATE42);
+        Date3 = (EditText) findViewById(R.id.etDATE43);
+
+        PID1 = (EditText) findViewById(R.id.etPID41);
+        PID2 = (EditText) findViewById(R.id.etPID42);
+        PID3 = (EditText) findViewById(R.id.etPID43);
+
+        ChBox1 = (CheckBox) findViewById(R.id.chBox41);
+        ChBox2 = (CheckBox) findViewById(R.id.chBox42);
+        ChBox3 = (CheckBox) findViewById(R.id.chBox43);
+
+    }
+
+    public void insertdata5() {
+
+        String UserName1 = UserName.getText().toString();
+
     }
 }

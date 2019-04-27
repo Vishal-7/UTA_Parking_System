@@ -8,6 +8,7 @@ import android.database.sqlite.SQLiteDatabase;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.Menu;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -17,7 +18,7 @@ import android.widget.Toast;
 public class user_prof_screen extends AppCompatActivity {
     SQLiteDatabase Db;
     private EditText Fname2,Lname2,UTAid2,Phno2,Email2,Carinfo2,Licenseno2;
-
+    String uname=MainActivity.Name1;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -33,7 +34,7 @@ public class user_prof_screen extends AppCompatActivity {
         btn1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                //startActivity(new Intent(user_prof_screen.this, user_edit_prof_screen.class));
+                startActivity(new Intent(user_prof_screen.this, user_edit_prof_screen.class));
                 //show();
 
             }
@@ -48,6 +49,18 @@ public class user_prof_screen extends AppCompatActivity {
         getMenuInflater().inflate(R.menu.main, menu);
         return super.onCreateOptionsMenu(menu);
     }
+
+    public boolean onOptionsItemSelected(MenuItem item){
+        switch (item.getItemId()) {
+
+            case R.id.action_logout:
+                startActivity(new Intent(user_prof_screen.this,MainActivity.class));
+                Toast.makeText(getApplicationContext(),"You have successfully Logged out!",Toast.LENGTH_LONG).show();
+
+        }
+        return super.onOptionsItemSelected(item);
+    }
+
     private void UISetupViews1(){
         Fname2 = (EditText)findViewById(R.id.etFName1);
         Lname2 = (EditText)findViewById(R.id.etLName1);
@@ -62,7 +75,7 @@ public class user_prof_screen extends AppCompatActivity {
 
         Db=openOrCreateDatabase("Reg", Context.MODE_PRIVATE, null);
 
-        Cursor c = Db.rawQuery("SELECT * FROM  reg;",null);
+        Cursor c = Db.rawQuery("SELECT * FROM  reg where username=?;",new String[]{uname});
         if (c !=  null&&c.moveToFirst()){
             Lname2.setText(c.getString(1));
             Fname2.setText(c.getString(0));

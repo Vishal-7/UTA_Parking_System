@@ -1,7 +1,10 @@
 package com.example.myapplication1;
 
+import android.content.Context;
 import android.content.Intent;
 import android.content.pm.SigningInfo;
+import android.database.Cursor;
+import android.database.sqlite.SQLiteDatabase;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.Menu;
@@ -15,24 +18,54 @@ public class MainActivity extends AppCompatActivity {
     private EditText Password;
     private Button Signin;
     private int counter = 5;
-
+    SQLiteDatabase Db;
+    public static String uname="",pwd="",utype="",Name1,Password1;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
         Name = (EditText)findViewById(R.id.etUsername);
+
         Password = (EditText)findViewById(R.id.etPassword);
         Signin = (Button)findViewById(R.id.SignInBtn);
 
+        //final String u=Name.getText()+"",p=Password.getText().toString();
 
-        Signin.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-         //       validate(Name.getText().toString(),Password.getText().toString());
-                startActivity(new Intent(MainActivity.this, admin_hs.class));
-            }
-        });
+        Toast.makeText(getApplicationContext(),Name1,Toast.LENGTH_LONG).show();
+
+
+
+            Signin.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    insertdata2();
+                    Db=openOrCreateDatabase("Reg", Context.MODE_PRIVATE, null);
+                    Cursor c = Db.rawQuery("Select usertype from reg where username = ? and password= ?",new String[]{Name1,Password1});
+                    if (c !=  null&&c.moveToFirst()){
+                        utype=(c.getString(0));
+                        c.close();
+                    }
+                    if(utype.equals("User"))
+                    {
+                        startActivity(new Intent(MainActivity.this, user_hs.class));}
+                     else if(utype.equals("a"))
+                    {
+                        startActivity(new Intent(MainActivity.this, user_hs.class));}
+
+                    else if(utype.equals("Manager"))
+                    {
+                        startActivity(new Intent(MainActivity.this, mgr_hs.class));
+                    }
+                    else if(utype.equals("Admin"))
+                    {
+                        startActivity(new Intent(MainActivity.this, admin_hs.class));
+                    }
+                }
+            });
+
+
+
 
         Button Signup = (Button) findViewById(R.id.SignUpBtn);
 
@@ -67,6 +100,11 @@ public class MainActivity extends AppCompatActivity {
             }
         }
 
+    }
+
+    public void insertdata2() {
+        Name1 = Name.getText().toString();
+        Password1 = Password.getText().toString();
     }
 
 }

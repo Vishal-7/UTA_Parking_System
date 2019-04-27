@@ -67,35 +67,35 @@
             android:layout_height="match_parent">
 
             <EditText
-                android:id="@+id/editText67"
+                android:id="@+id/etSNO21"
                 android:layout_width="67dp"
                 android:layout_height="wrap_content"
                 android:ems="10"
                 android:inputType="textPersonName" />
 
             <EditText
-                android:id="@+id/editText68"
+                android:id="@+id/etPID21"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:ems="10"
                 android:inputType="textPersonName" />
 
             <EditText
-                android:id="@+id/editText76"
+                android:id="@+id/etDATE21"
                 android:layout_width="160dp"
                 android:layout_height="wrap_content"
                 android:ems="10"
                 android:inputType="textPersonName" />
 
             <EditText
-                android:id="@+id/editText77"
+                android:id="@+id/etSTIME21"
                 android:layout_width="129dp"
                 android:layout_height="wrap_content"
                 android:ems="10"
                 android:inputType="textPersonName" />
 
             <EditText
-                android:id="@+id/editText78"
+                android:id="@+id/etDURATION21"
                 android:layout_width="90dp"
                 android:layout_height="wrap_content"
                 android:ems="10"
@@ -108,35 +108,35 @@
             android:layout_height="match_parent" >
 
             <EditText
-                android:id="@+id/editText80"
+                android:id="@+id/etSNO22"
                 android:layout_width="63dp"
                 android:layout_height="wrap_content"
                 android:ems="10"
                 android:inputType="textPersonName" />
 
             <EditText
-                android:id="@+id/editText81"
+                android:id="@+id/etPID22"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:ems="10"
                 android:inputType="textPersonName" />
 
             <EditText
-                android:id="@+id/editText82"
+                android:id="@+id/etDATE22"
                 android:layout_width="155dp"
                 android:layout_height="wrap_content"
                 android:ems="10"
                 android:inputType="textPersonName" />
 
             <EditText
-                android:id="@+id/editText83"
+                android:id="@+id/etSTIME22"
                 android:layout_width="137dp"
                 android:layout_height="wrap_content"
                 android:ems="10"
                 android:inputType="textPersonName" />
 
             <EditText
-                android:id="@+id/editText84"
+                android:id="@+id/etDURATION22"
                 android:layout_width="90dp"
                 android:layout_height="wrap_content"
                 android:ems="10"
@@ -148,35 +148,35 @@
             android:layout_height="match_parent" >
 
             <EditText
-                android:id="@+id/editText85"
+                android:id="@+id/etSNO23"
                 android:layout_width="65dp"
                 android:layout_height="wrap_content"
                 android:ems="10"
                 android:inputType="textPersonName" />
 
             <EditText
-                android:id="@+id/editText86"
+                android:id="@+id/etPID23"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:ems="10"
                 android:inputType="textPersonName" />
 
             <EditText
-                android:id="@+id/editText87"
+                android:id="@+id/etDATE23"
                 android:layout_width="144dp"
                 android:layout_height="wrap_content"
                 android:ems="10"
                 android:inputType="textPersonName" />
 
             <EditText
-                android:id="@+id/editText88"
+                android:id="@+id/etSTIME23"
                 android:layout_width="112dp"
                 android:layout_height="wrap_content"
                 android:ems="10"
                 android:inputType="textPersonName" />
 
             <EditText
-                android:id="@+id/editText89"
+                android:id="@+id/etDURATION23"
                 android:layout_width="90dp"
                 android:layout_height="wrap_content"
                 android:ems="10"
@@ -188,35 +188,35 @@
             android:layout_height="match_parent" >
 
             <EditText
-                android:id="@+id/editText90"
+                android:id="@+id/etSNO24"
                 android:layout_width="62dp"
                 android:layout_height="wrap_content"
                 android:ems="10"
                 android:inputType="textPersonName" />
 
             <EditText
-                android:id="@+id/editText91"
+                android:id="@+id/etPID24"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:ems="10"
                 android:inputType="textPersonName" />
 
             <EditText
-                android:id="@+id/editText92"
+                android:id="@+id/etDATE24"
                 android:layout_width="155dp"
                 android:layout_height="wrap_content"
                 android:ems="10"
                 android:inputType="textPersonName" />
 
             <EditText
-                android:id="@+id/editText93"
+                android:id="@+id/etSTIME24"
                 android:layout_width="142dp"
                 android:layout_height="wrap_content"
                 android:ems="10"
                 android:inputType="textPersonName" />
 
             <EditText
-                android:id="@+id/editText94"
+                android:id="@+id/etDURATION24"
                 android:layout_width="90dp"
                 android:layout_height="wrap_content"
                 android:ems="10"
@@ -228,35 +228,35 @@
             android:layout_height="match_parent" >
 
             <EditText
-                android:id="@+id/editText96"
+                android:id="@+id/etSNO25"
                 android:layout_width="53dp"
                 android:layout_height="wrap_content"
                 android:ems="10"
                 android:inputType="textPersonName" />
 
             <EditText
-                android:id="@+id/editText97"
+                android:id="@+id/etPID25"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:ems="10"
                 android:inputType="textPersonName" />
 
             <EditText
-                android:id="@+id/editText98"
+                android:id="@+id/etDATE25"
                 android:layout_width="127dp"
                 android:layout_height="wrap_content"
                 android:ems="10"
                 android:inputType="textPersonName" />
 
             <EditText
-                android:id="@+id/editText100"
+                android:id="@+id/etSTIME25"
                 android:layout_width="131dp"
                 android:layout_height="wrap_content"
                 android:ems="10"
                 android:inputType="textPersonName" />
 
             <EditText
-                android:id="@+id/editText99"
+                android:id="@+id/etDURATION25"
                 android:layout_width="90dp"
                 android:layout_height="wrap_content"
                 android:ems="10"

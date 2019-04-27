@@ -54,13 +54,13 @@
         android:text="Specific Time"
         android:textSize="18sp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/editText"
+        app:layout_constraintEnd_toStartOf="@+id/etSpecTime"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
-        android:id="@+id/editText"
+        android:id="@+id/etSpecTime"
         android:layout_width="194dp"
         android:layout_height="wrap_content"
         android:background="@drawable/my_border"
@@ -107,14 +107,14 @@
         android:text="Available Spots"
         android:textSize="18sp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/editText53"
+        app:layout_constraintEnd_toStartOf="@+id/etAvailSpots"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="1.0" />
 
     <EditText
-        android:id="@+id/editText53"
+        android:id="@+id/etAvailSpots"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:background="@drawable/my_border"
